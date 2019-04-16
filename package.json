@@ -1,0 +1,36 @@
+{
+  "name": "fernando",
+  "version": "1.0.0",
+  "description": "Site for fernando",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://benito-gallardo@github.com/benito-gallardo/fernando.git"
+  },
+  "author": "Benito Gallardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benito-gallardo/fernando/issues"
+  },
+  "homepage": "https://github.com/benito-gallardo/fernando#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.3",
+    "browserify": "^16.2.3",
+    "bulma": "^0.7.4",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-data": "^1.3.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-sass": "^4.0.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

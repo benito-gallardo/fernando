@@ -1,0 +1,40 @@
+{% macro active(activePage='home') %}
+  <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="#" class="navbar-item {%if activePage == 'how-we-help' %} is-active {% endif %}">How We Help</a>
+        
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a href="#" class="navbar-link {%if activePage == 'product' %} is-active {% endif %}">Product</a>
+          
+          <div class="navbar-dropdown is-boxed">
+            <a href="" class="navbar-item">Product 1</a>
+            <hr class="navbar-divider">
+            <a href="" class="navbar-item">Product 2</a>
+          </div>
+        </div>
+        <a href="#" class="navbar-item {%if activePage == 'industries' %} is-active {% endif %}">Industries</a>
+        <a href="#" class="navbar-item {%if activePage == 'industries' %} is-active {% endif %}">About</a>
+      </div>
+      <div class="navbar-end">
+        <a href="" class="navbar-item">Sign In</a>
+        <a href="" class="navbar-item">Try Now</a>
+        <div class="navbar-item">
+        <a href="" class="button is-primary">Schedual A Call</a>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+{% endmacro %}

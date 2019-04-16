@@ -1,0 +1,27 @@
+<!-- index.nunjucks -->
+{% extends "layout.njk" %}
+
+{% block content %}
+  
+  <div class="hero is-large is-primary is-gradient">
+  <div class="hero-head">
+    {{nav.active('home')}}
+  </div>
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Hire an HR Manager</h1>
+        <p class="subtitle">For only $99/month</p>
+        <p>HR Policy, Onboarding Paperwork, Terminations, Claims Management & Compliance + More</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="gallery">
+  <!-- Loops through "images" array -->
+  {% for image in images %}
+  <div class="gallery__item">
+    <img src="/assets/images/{{image.src}}" alt="{{image.alt}}"> be 
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
