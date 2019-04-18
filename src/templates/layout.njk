@@ -9,8 +9,10 @@
   <title>Document</title>
 </head>
 <body>
-  {% import 'macros/nav-macro.njk' as nav %}
-  {% block content %} {% endblock %}
-  <script src="/assets/js/main.js"></script>
+  <div id="main" :class="{ active: isActive }">
+    {% import 'macros/nav-macro.njk' as nav %}
+    {% block content %} {% endblock %}
+  </div>
+  <script src="/assets/js/test.js"></script>
 </body>
 </html>
