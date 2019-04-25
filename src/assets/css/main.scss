@@ -1,16 +1,23 @@
 //@import "../node_modules/bootstrap/scss/bootstrap";
 
-
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
 
-$primary: #0082c8;
-$secondary: #7c4dff;
-$color-1: #f6fbfe;
+// Vars / Bulma Overrides
+@import "./utils/vars";
 
+// Bulma
 @import "../../../node_modules/bulma/bulma.sass";
 
-.is-gradient {background: linear-gradient(45deg, #0082c8, #6441A5);}
+// globs
+@import './utils/global';
+
+// components
+@import "./components/modal";
+@import "./components/trust-bar";
+
+// pages
+@import './pages/index';

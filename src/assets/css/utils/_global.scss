@@ -1,0 +1,17 @@
+* {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+//font
+.has-text-weight-black {
+  font-weight: 900!important;
+}
+
+//gradients
+.is-gradient {background: linear-gradient(45deg, #0082c8, #6441A5);}
+
+//images
+img {
+  max-width:100%;
+  height:auto;
+}

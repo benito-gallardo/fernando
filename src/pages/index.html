@@ -1,0 +1,45 @@
+<!-- index.nunjucks -->
+{% extends "layout.njk" %}
+
+{% block content %}
+<!-- hero -->
+  <div class="homepage">
+    <div class="hero is-large is-primary is-gradient">
+      <div class="hero-head">
+        {{nav.active('home')}}
+      </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-1 has-text-weight-bold	">Hire an HR Manager</h1>
+          <p class="subtitle is-2">For only $99/month</p>
+          <p class="subtitle is-4">HR Policy, Onboarding Paperwork, <br> Terminations, Claims Management & Compliance + More</p>
+          <div class="btn-wrap">
+            <a @click="toggle.formModal = !toggle.formModal" class="button is-medium is-primary is-inverted is-outlined">Schedual a Call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- trust bar -->
+    {% include 'partials/trust-bar.html' %}
+    <!-- how does it work -->
+    <section class="section">
+      <div class="container has-text-centered is-multiline">
+        <div class="columns  is-centered">
+          <div class="column is-half-desktop is-three-fifths-tablet ">
+            <h1 class="title is-3" v-scroll="stickyHeader">How Does it Work?</h1>
+            <h2 class="subtitle">We give you a you a dedicated HR manager who helps you craft HR policy and maintain compliance</h2> 
+          </div>
+        </div>
+        <div class="column">
+          <img src="https://www.bambee.com/assets/images/market/video-poster.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- section 1 -->
+    <section class="section">
+      <div class="container">
+        <h1 class="title" v-scroll="stickyHeader">Title</h1>
+      </div>
+    </section>
+  </div>
+{% endblock %}
