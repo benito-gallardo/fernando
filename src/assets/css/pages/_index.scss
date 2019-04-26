@@ -7,8 +7,29 @@
     }
   }
 }
+.sticky-header {
+  border-top: 1px solid #e9e8eb;
+  border-bottom: 1px solid #e9e8eb;
+  position: sticky;
+  top: 52px;
+  z-index: 3;
+  .header {
+    padding: 1rem;
+  }
+}
 .is-sticky {
   position: fixed;
   top: 70px;
   width: 100%
 }
+// $sizes: (0,10,15,20,25,30,50);
+// $positions: ('top','left','bottom','right');
+
+// @each $size in $sizes {
+//   .u-m-#{$size} {
+//     margin: $size + px;
+//   }
+//   .u-p-#{$size} {
+//     padding: $size + px;
+//   }
+// }

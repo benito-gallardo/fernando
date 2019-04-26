@@ -2,10 +2,17 @@
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+// display
+.dib {display: inline-block}
+.db {display: block}
 //font
 .has-text-weight-black {
   font-weight: 900!important;
 }
+.line-height-s {line-height: .5}
+.line-height-m {line-height: 1}
+.line-height-l {line-height: 1.5}
+.line-height-xl {line-height: 2}
 
 //gradients
 .is-gradient {background: linear-gradient(45deg, #0082c8, #6441A5);}

@@ -13,9 +13,11 @@
 @import "../../../node_modules/bulma/bulma.sass";
 
 // globs
+@import './utils/spacing';
 @import './utils/global';
 
 // components
+@import "./components/nav";
 @import "./components/modal";
 @import "./components/trust-bar";
 

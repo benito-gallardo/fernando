@@ -14,10 +14,10 @@ window.main = new Vue ({
     stickyHeader(evt,el){
       let sticky = el.offsetTop;
       console.log(sticky)
-      if(window.pageYOffset > sticky) {
-        el.classList.add('is-sticky')
+      if(window.scrollY > 52) {
+        el.classList.add('sticky')
       } else {
-        el.classList.remove('is-sticky')
+        el.classList.remove('sticky')
       }
       //if(window.scrollY > 50)console.log(el);
     }
