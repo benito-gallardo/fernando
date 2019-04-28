@@ -153,6 +153,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
 
 /***/ }),
 
+/***/ "./src/assets/js/components/slider/_card.js":
+/*!**************************************************!*\
+  !*** ./src/assets/js/components/slider/_card.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: \"Card\",\n  props: {\n    headline: String,\n    imgName: String,\n    text: String\n  },\n  template: \"\\n   <div class=\\\"card\\\">\\n    <img\\n      :src=\\\"imgName\\\"\\n      class=\\\"card-icon\\\"\\n      alt=\\\"card icon\\\"\\n    />\\n    <div class='card-content'>\\n      <h3 class='headline'>{{headline}}</h3>\\n      <p>{{text}}</p>\\n    </div>\\n  </div>\\n  \"\n});\n\n//# sourceURL=webpack:///./src/assets/js/components/slider/_card.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/index.js":
 /*!********************************!*\
   !*** ./src/assets/js/index.js ***!
@@ -161,7 +173,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/_scroll */ \"./src/assets/js/components/_scroll.js\");\n\n\nwindow.main = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({\n  el: '#main',\n  data: {\n    toggle: {\n      mobileNavOpen: false,\n      formModal: false\n    }\n  },\n  methods: {\n    stickyHeader: function stickyHeader(evt, el) {\n      var sticky = el.offsetTop;\n      console.log(sticky);\n\n      if (window.scrollY > 52) {\n        el.classList.add('sticky');\n      } else {\n        el.classList.remove('sticky');\n      } //if(window.scrollY > 50)console.log(el);\n\n    }\n  }\n});\n\n//# sourceURL=webpack:///./src/assets/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_slider_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider/_card */ \"./src/assets/js/components/slider/_card.js\");\n/* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/_scroll */ \"./src/assets/js/components/_scroll.js\");\n\n\n\nwindow.main = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({\n  el: '#main',\n  components: {\n    Card: _components_slider_card__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n  },\n  data: {\n    toggle: {\n      mobileNavOpen: false,\n      formModal: false\n    }\n  },\n  methods: {\n    stickyHeader: function stickyHeader(evt, el) {\n      var sticky = el.offsetTop;\n\n      if (window.scrollY > 52) {\n        el.classList.add('sticky');\n      } else {\n        el.classList.remove('sticky');\n      }\n    }\n  }\n});\n\n//# sourceURL=webpack:///./src/assets/js/index.js?");
 
 /***/ })
 
