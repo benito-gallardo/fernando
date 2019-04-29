@@ -1,1 +1,0 @@
-{"version":3,"sources":["page/index.scss"],"names":[],"mappings":"AAAA,WACE,WAAA,6DAAA,CAAA,gCAAA,UAAA,OACA,gBAAA","file":"page/index.css","sourcesContent":[".jumbotron {\n  background: linear-gradient(45deg,rgba(0, 130, 200, 0.9),rgba(100, 65, 165, 0.9)), url(/assets/images/hero-bg.jpg)no-repeat center;\n  background-size: cover;\n}"]}
