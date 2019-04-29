@@ -8,14 +8,18 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  {% if cssFile %} 
+    <link rel="stylesheet" href="{{ cssFile }}">
+  {% endif %}
 </head>
-<body>
+<body class="{{ bodyClass }}">
   <div id="main">
-    {% import 'macros/nav-macro.njk' as nav %}
+    {% import 'macros/nav.njk' as nav %}
     {% block content %} {% endblock %}
-    {% include 'partials/form-modal.njk' %}
+    {# include 'partials/form-modal.njk' #}
   </div>
-  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/main.js"></script>
   <script>
     (function(d, s, id) {
       var js, sjs = d.getElementsByTagName(s)[0];

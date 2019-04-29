@@ -6,6 +6,7 @@ import render from 'gulp-nunjucks-render';
 //sass
 import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
+import cleanCSS from 'gulp-clean-css';
 //images
 import imagemin from 'gulp-imagemin';
 //js
@@ -54,6 +55,7 @@ export const scss = () => {
     browsers: ['last 2 versions'],
     cascade: false
   }))
+  .pipe(cleanCSS())
   .pipe(dest(`${dir.sass.dest}`, { sourcemaps: '.' }))
   .pipe(browserSync.stream());
 }

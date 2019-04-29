@@ -1,0 +1,41 @@
+@import '../../../../node_modules/bootstrap/scss/variables';
+//Dark or Light background to determine text color
+@function text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000; // Lighter backgorund, return dark color
+  } @else {
+    @return #fff; // Darker background, return light color
+  }
+}
+
+//Bootstrap Button - Make Any Customizations Here
+@mixin custom-bootstrap-btns($value) {
+  //Generates the class names via the $colors Map
+  @each $className in $value {
+    .btn-#{nth($className, 1)} {
+      $buttonColor: nth($className, 2);
+      background: $buttonColor;
+      color: text-color($buttonColor);
+      border-color: darken($buttonColor, 5%);
+      &:hover {
+        background: lighten($buttonColor, 3%);
+        color: text-color(lighten($buttonColor, 10%));
+        border-color: $buttonColor;
+      }
+    }
+  }
+  //Button Sizes
+  .btn {
+    &-lg {
+      //Any Size Customizations here
+    }
+    &-sm {
+      //Any Size Customizations here
+    }
+    &-link {
+      //Any Customizations here
+    }
+  }
+}
+@include custom-bootstrap-btns($colors);
+@include custom-bootstrap-btns($theme-colors);
