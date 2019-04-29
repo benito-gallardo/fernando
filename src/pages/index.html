@@ -1,117 +1,16 @@
-<!-- index.nunjucks -->
-{% extends "layout.njk" %}
-
-{% block content %}
-<!-- hero -->
-  <div class="homepage">
-    <div class="hero is-large is-primary is-gradient">
-      <div class="hero-head">
-        {{nav.active('home')}}
-      </div>
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-1 has-text-weight-bold	">Hire an HR Manager</h1>
-          <p class="subtitle is-2">For only $99/month</p>
-          <p class="subtitle is-4">HR Policy, Onboarding Paperwork, <br> Terminations, Claims Management & Compliance + More</p>
-          <div class="btn-wrap">
-            <a @click="toggle.formModal = !toggle.formModal" class="button is-medium is-primary is-inverted is-outlined">Schedual a Call</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- -->
-    <section class="section has-text-centered p-t-0">
-      <div class="sticky-header has-background-white">
-        <h2 class="header is-size-4 has-text-weight-semibold ">HR Policy Shouldn't Be Left To Google</h2>
-      </div>
-      <div class="container">
-        <h1 class="title is-2">Your Own Dedicated HR Manager</h1>
-        <div class="columns is-vcentered">
-          <div class="column is-4">
-            <img src="https://www.bambee.com/assets/images/market/beautiful-people/ashley-medows.jpg" alt="" class="dib" width="260">
-              <h3 class="title is-size-5 line-height-l">Ashley Medows</h3>
-             <p class="subtitle is-size-6 line-height-l">
-               <span class="dib" > <i class="far fa-check-square has-text-primary is-3"></i> Bambee Certified HR Manager</span> <br>
-                5+ Years Experience <br>
-                Supports All 50 States
-             </p>
-          </div>
-          <div class="column is-8">
-             <div class="columns m-b-0">
-               <div class="column m-b-s">
-                  <i class="fas fa-clipboard-check has-text-primary is-size-1 p-b-s"></i>
-                  <h3 class="title is-6 line-height-l">HR Policy & Procedures</h3>
-                  <p class="subtitle is-6 line-height-l">We’ll work with you to craft your internal HR policies that fit the way you run your business.</p>
-               </div>
-               <div class="column m-b-s">
-                  <i class="fas fa-sitemap has-text-primary is-size-1 p-b-s"></i>
-                  <h3 class="title is-6 line-height-l">Employer Coaching & Guidance</h3>
-                  <p class="subtitle is-6 line-height-l">Full remote HR support, available to help by phone, email, or chat. Consider us an extension of your team.</p>
-               </div>
-            </div>
-            <div class="columns m-b-0">
-               <div class="column m-b-s">
-                  <i class="far fa-handshake has-text-primary is-size-1 p-b-s"></i>
-                  <h3 class="title is-6 line-height-l">Compliant Onboarding & Terminations</h3>
-                  <p class="subtitle is-6 line-height-l">Our powerful platform lets you onboard, terminate, and take corrective action easily and securely.</p>
-               </div>
-               <div class="column m-b-s">
-                  <i class="fas fa-piggy-bank has-text-primary is-size-1 p-b-s"></i>
-                  <h3 class="title is-6 line-height-l">General & Compensation Compliance</h3>
-                  <p class="subtitle is-6 line-height-l">Bambee makes sure your business stays compliant with nuanced wage and hour regulations.</p>
-               </div>
-             </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container has-text-centered">
-        <h1 class="title is-2">Real Time Chat</h1>
-        <div class="columns">
-          <div class="column has-text-right">
-            <div class='slider-wrap'>
-              <img src="https://www.bambee.com/assets/images/product/chat/phone.jpg" alt="">
-              <Card
-                class="current-element"
-                headline="headline"
-                text="this is some text"
-                img-name="/assets/images/chat/1.png"
-              />
-            </div>
-          </div>
-          <div class="column has-text-left">
-            <div class="controls">
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- how does it work -->
-    <section class="section">
-      <div class="container has-text-centered is-multiline">
-        <div class="columns  is-centered">
-          <div class="column is-half-desktop is-three-fifths-tablet ">
-            <h1 class="title is-3">How Does it Work?</h1>
-            <h2 class="subtitle">We give you a you a dedicated HR manager who helps you craft HR policy and maintain compliance</h2> 
-          </div>
-        </div>
-        <div class="column">
-          <img src="https://www.bambee.com/assets/images/market/video-poster.jpg" alt="">
-        </div>
-      </div>
-    </section>
-    <!-- section 1 -->
-    <section class="section">
-      <div class="container">
-        <h1 class="title" >Title</h1>
-        
-        <a class="subbly-checkout" href="https://www.subbly.co/checkout/buy/26009" data-product-id="26009" style="">Subscribe</a>
-      </div>
-    </section>
-    
-  </div>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  {% import "macros/nav-macro.njk" as nav %}
+  {{nav.active('home')}} 
+  test
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
