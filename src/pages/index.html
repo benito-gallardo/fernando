@@ -1,0 +1,230 @@
+<!-- index.nunjucks -->
+{% extends "layout.njk" %}
+{% set cssFile = '/assets/css/page/index.css' %}
+{% set jsFile = '/assets/js/homepage.js' %}
+{% set bodyClass = "home" %}
+{% block content %}
+{{ nav.active('home') }}
+<section class="jumbotron jumbotron-fluid d-md-flex align-items-center text-center text-white py-md-0 mb-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <h1 class="display-4 ">Hire an HR Manager</h1>
+        <h2 class="" >For $99/month</h2>
+        <p class="mx-auto my-4">HR Policy, Onboarding Paperwork, Terminations, Claims Management &amp; Compliance + More</p>
+        <a class="btn btn-primary btn-lg mt-m" href="#" role="button">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-wrap">
+  <div class="sticky-header text-center border-top border-bottom sticky-top bg-white">
+    <h4 class="my-0 py-3">Section Title One</h4>
+  </div>
+  <section class="section-1">
+    <div class="container">
+      <div class="row text-center align-items-center justify-content-center">
+        <div class="col-12 col-md-4 mb-2 mb-m-0">
+          <img src="https://www.bambee.com/assets/images/market/beautiful-people/ashley-medows.jpg" alt="" width="256" class="img-fluid">
+          <h4 class="mt-3 mb-1">Ashley Medows</h4>
+          <h6 class="body-font">Bambee Certified</h6>
+          <p class="mb-1">5+ Years Experience</p>
+          <p class="mb-3">Supports All 50 States</p>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col-12 col-sm-6 my-2 ">
+              <i class="material-icons text-size-58 text-primary">dashboard</i>
+              <p class="header-font text-bold mb-1 mt-2">HR Policy &amp; Procedures</p> 
+              <p>We’ll work with you to craft your internal HR policies that fit the way you run your business.</p>
+            </div>
+            <div class="col-12 col-sm-6 my-2 ">
+              <i class="material-icons text-size-58 text-primary">blur_linear</i>
+              <p class="header-font text-bold mb-1 mt-2">HR Policy &amp; Procedures</p> 
+              <p>We’ll work with you to craft your internal HR policies that fit the way you run your business.</p>
+            </div>
+            <div class="col-12 col-sm-6 my-2 ">
+              <i class="material-icons text-size-58 text-primary">style</i>
+              <p class="header-font text-bold mb-1 mt-2">HR Policy &amp; Procedures</p> 
+              <p>We’ll work with you to craft your internal HR policies that fit the way you run your business.</p>
+            </div>
+            <div class="col-12 col-sm-6 my-2 ">
+                <i class="material-icons text-size-58 text-primary">blur_on</i>
+                <p class="header-font text-bold mb-1 mt-2">HR Policy &amp; Procedures</p> 
+                <p>We’ll work with you to craft your internal HR policies that fit the way you run your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2 pt-4">
+    <div class="container pb-3">
+      <h2 class="section-header font-weight-bold text-center">Real Time Chat</h2>
+      <div class="row d-md-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-4 text-center text-md-right pr-md-4">
+          <div id="chat-slider" class="carousel slide d-inline-block" data-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="/assets/images/chat/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/chat/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/chat/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/chat/1.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 text-center text-md-left pl-md-4 mt-5 mt-md-0">
+          <div class="chat-slider-list d-inline-block border rounded">
+            <a href="#" data-target="#chat-slider" data-slide-to="0" class="active d-block text-body border-bottom">
+              <div class="d-flex align-items-center">
+                <img src="https://www.bambee.com/assets/images/market/beautiful-people/male-2.jpg" alt="" width="56" class="img-fluid rounded-circle">
+                <div class="profile pl-3" >
+                  <p class="text-size-18 header-font text-semibold mb-0" >Dale Hicks</p> 
+                  <p class="mb-0" >Plum Hill Farms</p>
+                </div>
+              </div>
+              <p class="text-size-18 header-font subheading mb-0" data-v-e9ba2edc=""> How can I avoid paying unemployment?</p>
+            </a>
+            <a href="#" data-target="#chat-slider" data-slide-to="1" class="d-block text-body border-bottom">
+              <div class="d-flex align-items-center">
+                <img src="https://www.bambee.com/assets/images/market/beautiful-people/male-2.jpg" alt="" width="56" class="img-fluid rounded-circle">
+                <div class="profile pl-3" >
+                  <p class="text-size-18 header-font text-semibold mb-0" >Dale Hicks</p> 
+                  <p class="mb-0" >Plum Hill Farms</p>
+                </div>
+              </div>
+              <p class="text-size-18 header-font subheading mb-0" data-v-e9ba2edc=""> How can I avoid paying unemployment?</p>
+            </a>
+            <a href="#" data-target="#chat-slider" data-slide-to="2" class="d-block text-body border-bottom">
+              <div class="d-flex align-items-center">
+                <img src="https://www.bambee.com/assets/images/market/beautiful-people/male-2.jpg" alt="" width="56" class="img-fluid rounded-circle">
+                <div class="profile pl-3" >
+                  <p class="text-size-18 header-font text-semibold mb-0" >Dale Hicks</p> 
+                  <p class="mb-0" >Plum Hill Farms</p>
+                </div>
+              </div>
+              <p class="text-size-18 header-font subheading mb-0" data-v-e9ba2edc=""> How can I avoid paying unemployment?</p>
+            </a>    
+            <a href="#" data-target="#chat-slider" data-slide-to="3" class="d-block text-body">
+              <div class="d-flex align-items-center">
+                <img src="https://www.bambee.com/assets/images/market/beautiful-people/male-2.jpg" alt="" width="56" class="img-fluid rounded-circle">
+                <div class="profile pl-3" >
+                  <p class="text-size-18 header-font text-semibold mb-0" >Dale Hicks</p> 
+                  <p class="mb-0" >Plum Hill Farms</p>
+                </div>
+              </div>
+              <p class="text-size-18 header-font subheading mb-0" data-v-e9ba2edc=""> How can I avoid paying unemployment?</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="section-wrap">
+  <div class="sticky-header text-center border-top border-bottom sticky-top bg-white">
+    <h4 class="my-0 py-3">Section Title Two</h4>
+  </div>
+  <section class="section-3">
+    <div class="container pt-4">
+      <h2 class="section-header font-weight-bold text-center">Real Time Chat</h2>
+      <div class="row d-md-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-5 pt-4 pt-md-0 order-md-last">
+          <h3 class="h4 font-weight-bold">Create, Implement, and Manage <span class="text-primary d-block">Company Policy</span></h3>
+          <p>From sexual harassment & non-discrimination to PTO and employee handbooks, Bambee we'll help you create and enforce HR policy across your business.</p>
+        </div>
+        <div class="col-12 col-md-5 ">
+          <img src="https://www.bambee.com/assets/images/product/features/policy.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row d-md-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-5 pt-4 pt-md-0">
+          <h3 class="h4 font-weight-bold">Create, Implement, and Manage <span class="text-primary d-block">Company Policy</span></h3>
+          <p>From sexual harassment & non-discrimination to PTO and employee handbooks, Bambee we'll help you create and enforce HR policy across your business.</p>
+        </div>
+        <div class="col-12 col-md-5 my-5">
+          <img src="https://www.bambee.com/assets/images/product/features/person.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row d-md-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-5 pt-4 pt-md-0 order-md-last">
+          <h3 class="h4 font-weight-bold">Create, Implement, and Manage <span class="text-primary d-block">Company Policy</span></h3>
+          <p>From sexual harassment & non-discrimination to PTO and employee handbooks, Bambee we'll help you create and enforce HR policy across your business.</p>
+        </div>
+        <div class="col-12 col-md-5 ">
+          <img src="https://www.bambee.com/assets/images/product/features/cabinet.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-4">
+    <div class="container">
+        <h2 class="section-header font-weight-bold text-center">FAQs</h2>
+      <div class="row ">
+        <div class="col-12">
+          <div id="accordion" class="border rounded">
+            <div class="card border-0">
+              <div class="card-header bg-white border-bottom p-0" id="headingOne">
+                <a class="collapsed text-body d-block p-3" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Collapsible Group Item #1 <span class="icon"></span>
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse border-bottom" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <div class="card-header bg-white border-bottom p-0" id="headingTwo">
+                <a class="collapsed text-body d-block p-3" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2 <span class="icon"></span>
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse border-bottom" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <div class="card-header bg-white border-bottom p-0" id="headingThree">
+                <a class="collapsed text-body d-block p-3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3 <span class="icon"></span>
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse border-bottom" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body ">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="section-4">
+      <div class="container">
+        <div class="text-center section-header">
+          <h2 class="font-weight-bold mb-0">Flat Pricing, No Contracts</h2>
+          <p class="mt-0">All for less than the price of a utility bill</p>
+        </div>
+        {% include 'partials/pricing.html' %}
+      </div>
+    </div>
+  </section>
+  <section class="pb-0">
+      {% include 'partials/cta-schedule-a-call.html' %}
+  </section>
+  
+</div>
+{% include 'partials/form-modal.html' %}
+{% endblock %}
