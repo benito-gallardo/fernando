@@ -1,0 +1,44 @@
+// MEDIA QUERIES
+// Small devices (landscape phones, 576px and up)
+$sm-and-up: (min-width: 576px);
+
+// Medium devices (tablets, 768px and up)
+$md-and-up: (min-width: 768px);
+
+// Large devices (desktops, 992px and up)
+$lg-and-up: (min-width: 992px);
+
+// Extra large devices (large desktops, 1200px and up)
+$xl-and-up: (min-width: 1200px);
+
+// Extra small devices (portrait phones, less than 576px)
+$sm-and-down: (max-width: 575.98px);
+
+// Small devices (landscape phones, less than 768px)
+$md-and-down: (max-width: 767.98px); 
+
+// Medium devices (tablets, less than 992px)
+$lg-and-down: (max-width: 991.98px); 
+
+// Large devices (desktops, less than 1200px)
+$xl-and-down: (max-width: 1199.98px); 
+
+
+$headings-font-family: 'M PLUS Rounded 1c', sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
+//colors
+$body-color: #403e41;
+$blue : #0082c8;
+$purple-2: #7c4dff;
+$purple-3: #68478b;
+$green: #28c5aa;
+$theme-colors: (
+  "primary": $purple-3,
+  "secondary": $blue,
+  "color-1": #f6fbfe
+);
+// container 
+$container-max-widths: (
+ "xl": 1300px
+);
+$enable-responsive-font-sizes: true;

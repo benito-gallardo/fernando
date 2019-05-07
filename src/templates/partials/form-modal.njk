@@ -1,0 +1,98 @@
+<transition name="modals">
+  <div
+    class="modal"
+    v-if="toggle.formModal"
+    :class="{ 'is-active': toggle.formModal }"
+  >
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <!-- Full Name  -->
+        <div class="field">
+          <div class="control">
+            <label class="label">Full Name</label>
+            <input class="input" type="text" />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <div class="control">
+            <label class="label">Email</label>
+            <input class="input" type="email"/>
+          </div>
+          <p class="help is-danger">This email is invalid</p>
+        </div>
+
+        <!-- Business Name -->
+        <div class="field">
+          <div class="control">
+            <label class="label">Business Name</label>
+            <input class="input" type="text"  />
+          </div>
+        </div>
+
+        <!-- Company Address -->
+        <div class="field">
+          <div class="control">
+            <label class="label">Company Address</label>
+            <input class="input" type="text"  />
+          </div>
+        </div>
+
+        <!-- Business Size -->
+        <div class="field">
+          <div class="control">
+            <label class="label">Business Size</label>
+            <div class="select">
+              <select>
+                <option value="1-20">1 - 20</option>
+                <option value="21-49">21 - 49</option>
+                <option value="50-99">50 - 99</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zip Code -->
+        <div class="field">
+          <div class="control">
+            <label class="label">Zip Code</label>
+            <input class="input" type="text"  />
+          </div>
+        </div>
+
+        <!-- Business Phone -->
+        <div class="field">
+          <div class="control">
+            <label class="label">Business Phone</label>
+            <input class="input" type="text"  />
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" />
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-text">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="modal-close is-large"
+      aria-label="close"
+      @click.prevent="toggle.formModal = !toggle.formModal"
+    ></button>
+  </div>
+</transition>
