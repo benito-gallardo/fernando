@@ -1,4 +1,4 @@
-@import '../../../../node_modules/bootstrap/scss/variables';
+
 //Dark or Light background to determine text color
 @function text-color($color) {
   @if (lightness($color) > 50) {
@@ -37,5 +37,3 @@
     }
   }
 }
-@include custom-bootstrap-btns($colors);
-@include custom-bootstrap-btns($theme-colors);

@@ -1,0 +1,82 @@
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <form class="needs-validation" novalidate>
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Schedule an Overview Call</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+        <div class="modal-body">
+          <div class="form-row">
+            <div class="col-12 my-4">
+              <label for="fullName" class="d-none">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Full Name*" value="" required>
+              <div class="invalid-feedback">
+                This field is required
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <label for="email" class="d-none">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Email Address*" required>
+              <div class="invalid-feedback">
+                This field is required
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <label for="businessName" class="d-none">Business Name</label>
+              <input type="text" class="form-control" id="businessName" placeholder="Business Name*" value="" required>
+              <div class="invalid-feedback">
+                This field is required
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <label for="companyAddress" class="d-none">Company Address</label>
+              <input type="text" class="form-control" id="companyAddress" placeholder="Company Address*" required>
+              <div class="invalid-feedback">
+                  This field is required
+              </div>
+            </div>
+            <div class="col-md-12 mb-4">
+              <label for="companyAddress" class="d-none">Business Size</label>
+              <select class="custom-select" id="companyAddress">
+                <option selected disabled>Business Size</option>
+                <option value="1-20">1-20</option>
+                <option value="21-49">21-49</option>
+                <option value="50-99">50-99</option>
+              </select>
+            </div>
+            <div class="col-md-12 mb-4">
+              <label for="businessPhone" class="d-none">Business Phone</label>
+              <input type="text" class="form-control" id="businessPhone" placeholder="Business Phone*" minlength="14" required>
+              <div class="invalid-feedback">
+                Please provide a valid number.
+              </div>
+            </div>
+            <div class="col-md-12 mb-4">
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions*
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      
+    </div>
+  </div>
+</form>
+</div>

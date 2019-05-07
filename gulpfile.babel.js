@@ -10,6 +10,7 @@ import cleanCSS from 'gulp-clean-css';
 //images
 import imagemin from 'gulp-imagemin';
 //js
+import named from 'vinyl-named';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
 
@@ -49,7 +50,7 @@ export const html = () => {
   .pipe(dest(`${dir.dest}`))
 }
 export const scss = () => {
-  return src(`${dir.sass.src}/**/*.scss`, { sourcemaps: true })
+  return src(`${dir.sass.src}/**/*.scss`)
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
@@ -65,11 +66,13 @@ export const images = () => {
   .pipe(dest(`${dir.img.dest}`))
 }
 export const js = () => {
-  return src(`${dir.js.src}/*.js`)
+  return src(`${dir.js.src}/**.js`)
+  .pipe(named())
   .pipe(webpackStream( require('./webpack.config') ), webpack)
   .pipe(dest(`${dir.js.dest}`))
   .pipe(browserSync.stream());
 }
+
 export const bs = (cb) => {
   browserSync.init({
     server: {

@@ -1,4 +1,78 @@
+@import '../utils/vars';
+@import '../components/pricing';
 .jumbotron {
   background: linear-gradient(45deg,rgba(0, 130, 200, 0.9),rgba(100, 65, 165, 0.9)), url(/assets/images/hero-bg.jpg)no-repeat center;
   background-size: cover;
+  height:600px;
+  .col p {
+    max-width:500px;
+  }
+  @media #{$md-and-down}{
+    padding-top:4rem;
+    padding-bottom:4rem;
+    height:auto;
+  }
+}
+.sticky-header {
+  top:56px;
+  @media (max-width:400px){
+    h4 {font-size:5vw!important;}
+  }
+}
+section {
+  padding: 3rem 0;
+  .section-header {
+    margin-bottom:3rem;
+  }
+}
+#chat-slider{
+  background: url(https://www.bambee.com/assets/images/product/chat/phone.jpg);
+  background-size: 100% 100%;
+  max-width: 282.66px;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+  .carousel-inner {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+}
+.chat-slider-list {
+  max-width:471px;
+  width:100%;
+  [data-target="#chat-slider"] {
+    background:white;
+    padding: 16px 32px;
+    transition: background .5s ease;
+    &.active{
+      background: #f7f7f7;
+    }
+  }
+}
+#accordion {
+  box-shadow: 0 4px 13px -10px rgba(0,0,0,.45098);
+  &.border,
+  .border-bottom {
+    border-color:rgba(0,0,0,.12)!important;
+  }
+}   
+.card-header {
+  > a {
+    position: relative;
+    &:after {
+      content: "keyboard_arrow_up";
+      position: absolute;
+      font-family: "Material Icons";
+      font-size: 24px;
+      line-height: 1;
+      white-space: nowrap;
+      right: 12px;
+      top: 17px;
+    }
+    &.collapsed:after {
+      content: "keyboard_arrow_down";
+    }
+  }
 }

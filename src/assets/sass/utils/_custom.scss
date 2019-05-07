@@ -1,12 +1,65 @@
-//colors
-$blue : #0082c8;
-$purple-2: #7c4dff;
-$theme-colors: (
-  "primary": $blue,
-  "secondary": $purple-2,
-  "color-1": #f6fbfe
-);
-// container 
-$container-max-widths: (
- "xl": 1300px
-);
+@import './vars';
+// Type
+.header-font{font-family: $headings-font-family}
+.text-semibold {font-weight:500;}
+.text-bold{font-weight: 600;}
+.text-bolder{font-weight:700;}
+.text-boldest{font-weight:900;}
+.text-light{font-weight:300;}
+.text-lighter{font-weight:200;}
+.text-lightest{font-weight:100;}
+$mobile-text-size:58 52 48 42 38 36 32 30 28 26 24 22 20 18 16 14 12 10;
+@each $i in $mobile-text-size {
+  .text-size-#{$i}{
+    font-size:#{$i}px!important;
+    margin: ($i / 2 + px) 0 ($i / 2.5 + px)
+  }
+}
+@media #{$sm-and-up}{
+  @each $i in $mobile-text-size {
+    .text-size-s#{$i}{
+      font-size:#{$i}px!important;
+      margin: ($i / 2 + px) 0 ($i / 2.5 + px)
+    }
+  }
+}
+@media #{$md-and-up} {
+  @each $i in $mobile-text-size {
+    .text-size-m#{$i}{
+      font-size:#{$i}px!important;
+      margin: ($i / 2 + px) 0 ($i / 2.5 + px)
+    }
+  }
+}
+@media #{$lg-and-up}{
+  @each $i in $mobile-text-size {
+    .text-size-l#{$i}{
+      font-size:#{$i}px!important;
+      margin: ($i / 2 + px) 0 ($i / 2.5 + px)
+    }
+  }
+}
+@media #{$xl-and-up}{
+  @each $i in $mobile-text-size {
+    .text-size-xl#{$i}{
+      font-size:#{$i}px!important;
+      margin: ($i / 2 + px) 0 ($i / 2.5 + px)
+    }
+  }
+}
+
+// Links
+a:hover,
+.btn,
+.btn-link:hover {
+  text-decoration: none!important;
+}
+[data-toggle] {
+  cursor: pointer;
+}
+
+// Sizing
+.full-width{ width:100%;}
+
+
+// Margin/Padding

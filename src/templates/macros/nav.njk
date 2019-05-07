@@ -1,6 +1,6 @@
 {% macro active(activePage='home') %}
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">LogoGoesHere</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,11 +21,8 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
     </ul>
-    <button class="btn btn-outline-success my-2 my-lg-0" type="button">Schedule Overview Call</button>
+    <button class="btn my-2 my-lg-0" data-toggle="modal" data-target="#formModal" type="button">Schedule Overview Call</button>
   </div>
 </nav>
 {% endmacro %}
