@@ -20,19 +20,11 @@
     {# include 'partials/form-modal.njk' #}
   </div>
   {% include 'partials/footer.html' %}
+  <button class="buy">Click to Buy! <strong>$10</strong></button>
+  <script src="https://checkout.stripe.com/checkout.js"></script>
   <script src="/assets/js/main.js"></script>
   {% if jsFile %} 
     <script src="{{ jsFile }}"></script>
   {% endif %}
-  <script>
-    (function(d, s, id) {
-      var js, sjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); 
-      js.id = id;
-      js.src = "//s3.amazonaws.com/subbly/cdn/embed/v2/js/subbly-sdk.min.js";
-      sjs.parentNode.insertBefore(js, sjs);
-    }(document, 'script', 'subbly-jssdk'));
-    </script>
 </body>
 </html>

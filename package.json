@@ -6,7 +6,7 @@
   "scripts": {
     "lambda-dev": "netlify-lambda serve functions",
     "lambda-build": "netlify-lambda build functions",
-    "dev": "NODE_ENV='development' concurrently \"./node_modules/.bin/gulp serve\" \"npm run lambda-dev\"",
+    "dev": "NODE_ENV=development concurrently \"./node_modules/.bin/gulp serve\" \"npm run lambda-dev\"",
     "build": "NODE_ENV='production' ./node_modules/.bin/gulp build && npm run lambda-build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +27,8 @@
     "babel-loader": "^8.0.5",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.5",
+    "concurrently": "^4.1.0",
+    "dotenv": "^8.0.0",
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
@@ -42,9 +44,12 @@
     "netlify-lambda": "^1.4.7",
     "node-sass": "^4.12.0",
     "popper.js": "^1.15.0",
+    "uuid": "^3.3.2",
     "vinyl-named": "^1.1.0",
     "webpack": "^4.30.0",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "stripe": "^6.31.2"
+  }
 }

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const webpack = require('webpack');
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -18,6 +19,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      LAMBDA_ENDPOINT: JSON.stringify(process.env.LAMBDA_ENDPOINT),
+      STRIPE_PUBLISHABLE_KEY: JSON.stringify(process.env.STRIPE_PUBLISHABLE_KEY),
+    })
+  ]
   // resolve: {
   //   alias: {
   //     $: 'jquery/dist/jquery.js',
