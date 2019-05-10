@@ -20,8 +20,20 @@
     {# include 'partials/form-modal.njk' #}
   </div>
   {% include 'partials/footer.html' %}
-  <button class="buy">Click to Buy! <strong>$10</strong></button>
-  <script src="https://checkout.stripe.com/checkout.js"></script>
+    {# <button class="buy">Click to Buy! <strong>$10</strong></button>
+  <button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-plan_F27SRsrCLQiueQ"
+  role="link">
+  Checkout
+</button>
+
+  <div id="error-message">This is an error</div> #}
+
+
+
+<script src="https://js.stripe.com/v3"></script>
+
   <script src="/assets/js/main.js"></script>
   {% if jsFile %} 
     <script src="{{ jsFile }}"></script>
