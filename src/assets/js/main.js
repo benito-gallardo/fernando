@@ -1,6 +1,7 @@
 import bootstrap from 'bootstrap';
 import $ from 'jquery';
 // import './components/_stirpe';
+import './components/_stripeNew';
 window.jQuery = $;
 window.$ = $;
 
